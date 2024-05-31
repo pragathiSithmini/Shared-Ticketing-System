@@ -1,0 +1,43 @@
+const MAXIMUM_PAPER = 3
+range PAPER_RANGE = 0..MAXIMUM_PAPER
+
+const MAXIMUM_TONER = 3
+range TONER_RANGE = 0..MAXIMUM_TONER
+
+set MACHINE_ACTIONS = {obtainMachine , issueTicket, release, accessRefillTonerOption, refillToner , releaseRefillToner , accessRefillPaperOption , refillPaper , releaseRefillPaper}
+
+// Intialise ticket machine with given number of sheet and continue
+
+TICKET_MACHINE(PAPER_COUNT=MAXIMUM_PAPER, TONER_COUNT=MAXIMUM_TONER) = TICKET_MACHINE[MAXIMUM_PAPER][MAXIMUM_TONER],
+TICKET_MACHINE[p : PAPER_RANGE][t : TONER_RANGE] =
+   if(p>=1 & t>=1)
+   then (obtainMachine -> issueTicket -> release -> TICKET_MACHINE [p-1][t-1])
+   else (accessRefillPaperOption -> refillPaper -> releaseRefillPaper -> accessRefillTonerOption -> refillToner -> releaseRefillToner -> TICKET_MACHINE [MAXIMUM_PAPER][MAXIMUM_TONER] ) + MACHINE_ACTIONS .
+
+// Intialise passenger and ticket machine
+
+PASSENGER(TICKET_COUNT = MAXIMUM_PAPER ) = PASSENGER[TICKET_COUNT],
+PASSENGER[t : 0..TICKET_COUNT] =
+	if(t>0) 
+	then (obtainMachine -> issueTicket -> release -> PASSENGER[t-1])
+	else (terminate -> END) + MACHINE_ACTIONS .
+
+//Ticket technician process
+
+TICKET_TECHNICIAN = (
+  accessRefillPaperOption -> refillPaper -> releaseRefillPaper -> TICKET_TECHNICIAN
+  | terminate -> END) + MACHINE_ACTIONS .
+
+//Toner Technician
+
+TONER_TECHNICIAN = (
+  accessRefillTonerOption -> refillToner -> releaseRefillToner -> TONER_TECHNICIAN
+  | terminate -> END) + MACHINE_ACTIONS .
+
+
+|| PURCHASE_TICKET_SYSTEM =
+  (firstPassenger :PASSENGER(3)
+|| secondPassenger : PASSENGER(2)
+|| tonerTechnician : TONER_TECHNICIAN
+|| ticketTechnician : TICKET_TECHNICIAN
+|| {firstPassenger ,secondPassenger ,tonerTechnician,ticketTechnician } :: TICKET_MACHINE) / {terminate/ {firstPassenger.terminate, secondPassenger.terminate, tonerTechnician.terminate, ticketTechnician.terminate}} .

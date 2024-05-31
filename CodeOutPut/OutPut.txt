@@ -1,0 +1,74 @@
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Created ThreadGroup: "PassengerThreadGroup
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Created ThreadGroup: "PassengerThreadGroup
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized Ticket Machine
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized passenger: "Marry
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized passenger: "Shane
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized passenger: "Wikes
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized passenger: "Yourk
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized paper technician
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized toner technician
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized paper technician: "Paper Technician
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Initialized toner technician: "Toner Technician
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Started passenger: "Marry
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Started passenger: "Shane
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Started passenger: "Wikes
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Started passenger: "Yourk
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Started paper technician
+[12:06:30.984] [Ticket Paper Technician] Requested to refill ticket paper
+[12:06:30.978] [MACHINE] Refilling paper will exceed the capacity. Waiting to check again 
+[12:06:30.946] [TICKET_PRINTING_SYSTEM] Started toner technician
+[12:06:30.984] [Ticket Toner Technician] Requested to replace toner cartridge
+[12:06:30.978] [MACHINE] Toner has not reached the minimum level to be refilled. Waiting to check again 
+[12:06:30.984] [Passenger Yourk] is requesting to purchase ticket: Ticket{ticketNUmber=9996, ticketPrice=4000, passengerInfo=PassengerInfo{passengerName='Yourk', phoneNumber='0771234567', emailAddress='Yourk@gmail.com'}, travelInfo=TravelInfo[ Destination: Colombo, Departure Location: Colombo]}
+[12:06:30.984] [Passenger Wikes] is requesting to purchase ticket: Ticket{ticketNUmber=9997, ticketPrice=3000, passengerInfo=PassengerInfo{passengerName='Wikes', phoneNumber='0112312312', emailAddress='Wikes@gmail.com'}, travelInfo=TravelInfo[ Destination: Kandy, Departure Location: Matara]}
+[12:06:30.978] [MACHINE] Ticket purchased by Yourk
+[12:06:30.984] [Passenger Shane] is requesting to purchase ticket: Ticket{ticketNUmber=9998, ticketPrice=2000, passengerInfo=PassengerInfo{passengerName='Shane', phoneNumber='0321231231', emailAddress='Shane@gmail.com'}, travelInfo=TravelInfo[ Destination: Matara, Departure Location: Galle]}
+[12:06:30.984] [Passenger Marry] is requesting to purchase ticket: Ticket{ticketNUmber=9999, ticketPrice=1000, passengerInfo=PassengerInfo{passengerName='Marry', phoneNumber='0112332332', emailAddress='Marry@gmail.com'}, travelInfo=TravelInfo[ Destination: Galle, Departure Location: Kandy]}
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=10, currentTonerLevel=13, numberOfTicketsPrinted=0}
+[12:06:30.984] [Passenger Yourk] Purchased ticket: Ticket{ticketNUmber=9996, ticketPrice=4000, passengerInfo=PassengerInfo{passengerName='Yourk', phoneNumber='0771234567', emailAddress='Yourk@gmail.com'}, travelInfo=TravelInfo[ Destination: Colombo, Departure Location: Colombo]}
+[12:06:30.984] [Passenger Yourk] Requesting to print ticket: Ticket{ticketNUmber=9996, ticketPrice=4000, passengerInfo=PassengerInfo{passengerName='Yourk', phoneNumber='0771234567', emailAddress='Yourk@gmail.com'}, travelInfo=TravelInfo[ Destination: Colombo, Departure Location: Colombo]}
+[12:06:30.978] [MACHINE] Printed ticket: Ticket{ticketNUmber=9996, ticketPrice=4000, passengerInfo=PassengerInfo{passengerName='Yourk', phoneNumber='0771234567', emailAddress='Yourk@gmail.com'}, travelInfo=TravelInfo[ Destination: Colombo, Departure Location: Colombo]}
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=9, currentTonerLevel=12, numberOfTicketsPrinted=1}
+[12:06:30.984] [Passenger Yourk] Printed ticket: Ticket{ticketNUmber=9996, ticketPrice=4000, passengerInfo=PassengerInfo{passengerName='Yourk', phoneNumber='0771234567', emailAddress='Yourk@gmail.com'}, travelInfo=TravelInfo[ Destination: Colombo, Departure Location: Colombo]}
+[12:06:30.978] [MACHINE] Ticket purchased by Wikes
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=9, currentTonerLevel=12, numberOfTicketsPrinted=1}
+[12:06:30.984] [Passenger Wikes] Purchased ticket: Ticket{ticketNUmber=9997, ticketPrice=3000, passengerInfo=PassengerInfo{passengerName='Wikes', phoneNumber='0112312312', emailAddress='Wikes@gmail.com'}, travelInfo=TravelInfo[ Destination: Kandy, Departure Location: Matara]}
+[12:06:30.984] [Passenger Wikes] Requesting to print ticket: Ticket{ticketNUmber=9997, ticketPrice=3000, passengerInfo=PassengerInfo{passengerName='Wikes', phoneNumber='0112312312', emailAddress='Wikes@gmail.com'}, travelInfo=TravelInfo[ Destination: Kandy, Departure Location: Matara]}
+[12:06:30.978] [MACHINE] Printed ticket: Ticket{ticketNUmber=9997, ticketPrice=3000, passengerInfo=PassengerInfo{passengerName='Wikes', phoneNumber='0112312312', emailAddress='Wikes@gmail.com'}, travelInfo=TravelInfo[ Destination: Kandy, Departure Location: Matara]}
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=8, currentTonerLevel=11, numberOfTicketsPrinted=2}
+[12:06:30.984] [Passenger Wikes] Printed ticket: Ticket{ticketNUmber=9997, ticketPrice=3000, passengerInfo=PassengerInfo{passengerName='Wikes', phoneNumber='0112312312', emailAddress='Wikes@gmail.com'}, travelInfo=TravelInfo[ Destination: Kandy, Departure Location: Matara]}
+[12:06:30.978] [MACHINE] Ticket purchased by Shane
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=8, currentTonerLevel=11, numberOfTicketsPrinted=2}
+[12:06:30.984] [Passenger Shane] Purchased ticket: Ticket{ticketNUmber=9998, ticketPrice=2000, passengerInfo=PassengerInfo{passengerName='Shane', phoneNumber='0321231231', emailAddress='Shane@gmail.com'}, travelInfo=TravelInfo[ Destination: Matara, Departure Location: Galle]}
+[12:06:30.984] [Passenger Shane] Requesting to print ticket: Ticket{ticketNUmber=9998, ticketPrice=2000, passengerInfo=PassengerInfo{passengerName='Shane', phoneNumber='0321231231', emailAddress='Shane@gmail.com'}, travelInfo=TravelInfo[ Destination: Matara, Departure Location: Galle]}
+[12:06:30.978] [MACHINE] Printed ticket: Ticket{ticketNUmber=9998, ticketPrice=2000, passengerInfo=PassengerInfo{passengerName='Shane', phoneNumber='0321231231', emailAddress='Shane@gmail.com'}, travelInfo=TravelInfo[ Destination: Matara, Departure Location: Galle]}
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=7, currentTonerLevel=10, numberOfTicketsPrinted=3}
+[12:06:30.984] [Passenger Shane] Printed ticket: Ticket{ticketNUmber=9998, ticketPrice=2000, passengerInfo=PassengerInfo{passengerName='Shane', phoneNumber='0321231231', emailAddress='Shane@gmail.com'}, travelInfo=TravelInfo[ Destination: Matara, Departure Location: Galle]}
+[12:06:30.978] [MACHINE] Ticket purchased by Marry
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=7, currentTonerLevel=10, numberOfTicketsPrinted=3}
+[12:06:30.984] [Passenger Marry] Purchased ticket: Ticket{ticketNUmber=9999, ticketPrice=1000, passengerInfo=PassengerInfo{passengerName='Marry', phoneNumber='0112332332', emailAddress='Marry@gmail.com'}, travelInfo=TravelInfo[ Destination: Galle, Departure Location: Kandy]}
+[12:06:30.984] [Passenger Marry] Requesting to print ticket: Ticket{ticketNUmber=9999, ticketPrice=1000, passengerInfo=PassengerInfo{passengerName='Marry', phoneNumber='0112332332', emailAddress='Marry@gmail.com'}, travelInfo=TravelInfo[ Destination: Galle, Departure Location: Kandy]}
+[12:06:30.978] [MACHINE] Printed ticket: Ticket{ticketNUmber=9999, ticketPrice=1000, passengerInfo=PassengerInfo{passengerName='Marry', phoneNumber='0112332332', emailAddress='Marry@gmail.com'}, travelInfo=TravelInfo[ Destination: Galle, Departure Location: Kandy]}
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=6, currentTonerLevel=9, numberOfTicketsPrinted=4}
+[12:06:30.984] [Passenger Marry] Printed ticket: Ticket{ticketNUmber=9999, ticketPrice=1000, passengerInfo=PassengerInfo{passengerName='Marry', phoneNumber='0112332332', emailAddress='Marry@gmail.com'}, travelInfo=TravelInfo[ Destination: Galle, Departure Location: Kandy]}
+[12:06:30.978] [MACHINE] Refilling paper will exceed the capacity. Waiting to check again 
+[12:06:30.978] [MACHINE] Replaced toner cartridge 
+[12:06:30.978] [MACHINE] TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=6, currentTonerLevel=13, numberOfTicketsPrinted=4}
+[12:06:30.984] [Ticket Toner Technician] Ticket Machine status. TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=6, currentTonerLevel=13, numberOfTicketsPrinted=4}
+[12:06:30.984] [Ticket Toner Technician] Requested to replace toner cartridge
+[12:06:30.978] [MACHINE] Toner has not reached the minimum level to be refilled. Waiting to check again 
+All passengers have been served. Terminating the technician threads.
+[12:06:30.978] [MACHINE] java.lang.InterruptedException
+[12:06:30.978] [MACHINE] java.lang.InterruptedException
+[12:06:30.984] [Ticket Paper Technician] Ticket Machine status. TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=6, currentTonerLevel=13, numberOfTicketsPrinted=4}
+[12:06:30.984] [Ticket Toner Technician] Ticket Machine status. TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=6, currentTonerLevel=13, numberOfTicketsPrinted=4}
+[12:06:30.984] [Ticket Paper Technician] Requested to refill ticket paper
+[12:06:30.978] [MACHINE] Usage of the ticket machine is complete. No need to refill paper 
+[12:06:30.984] [Ticket Paper Technician] Ticket Machine status. TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=6, currentTonerLevel=13, numberOfTicketsPrinted=4}
+Paper Technician Finished, packs of paper used: 0
+[12:06:30.984] [Ticket Toner Technician] Requested to replace toner cartridge
+[12:06:30.978] [MACHINE] Usage of the ticket machine is complete. No need to replace toner cartridge 
+[12:06:30.984] [Ticket Toner Technician] Ticket Machine status. TicketMachine{ticketMachineId=' TicketMachine 001', currentPaperLevel=6, currentTonerLevel=13, numberOfTicketsPrinted=4}
+Toner Technician Finished, toner cartridge used: 1
+
+Process finished with exit code 0
